@@ -5,16 +5,17 @@
  *
  * Return: returns an unsigneed int value to calling function
  */
-
-int _abs(int x)
+int _abs(int n)
 {
-	if (x > 0 )
+	if (n > 0)
 	{
-		return(x);
+		return (n);
 	}
-	else (x < 0)
+
+	else
 	{
-		x = x * -1;
-		return(x); 
+		n *= -1;
+		return (n);
 	}
 }
+
