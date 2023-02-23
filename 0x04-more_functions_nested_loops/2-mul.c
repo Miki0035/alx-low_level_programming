@@ -1,9 +1,10 @@
-#include "main.c"
+#include "main.h"
+
 /**
- * mul - multiply two integers
- * @a: parameter
- * @b: parameter
- * Return: a * b
+ * mul - multiplies 2 nums
+ * @a: first param
+ * @b: second param
+ * Return: something
  */
 
 int mul(int a, int b)
