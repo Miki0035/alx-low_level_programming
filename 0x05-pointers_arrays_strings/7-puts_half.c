@@ -13,25 +13,29 @@ void puts_half(char *str)
 	{
 		i++;
 	}
-	if (i % 2 == 0)
+	int k = 0;
+
+	if (k < i)
 	{
-		i /= 2;
-		while (str[i] != '\n')
+		if (i % 2 == 0)
 		{
-			_putchar(str[i]);
-			i++;
+			i /= 2;
+			while (str[i] != '\n')
+			{
+				_putchar(str[i]);
+				i++;
+			}
 		}
-	}
-	else
-	{
-		int j = (i - 1) / 2;
-		
-		while (str[j] != '\n')
+		else
 		{
-			_putchar(str[j]);
-			j++;
+			int j = ((i - 1) / 2);
+
+			while (str[j] != '\n')
+			{
+				_putchar(str[j]);
+				j++;
+			}
 		}
 	}
 	_putchar('\n');
 }
-	 
