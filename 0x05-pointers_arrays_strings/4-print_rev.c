@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * print_rev - reverse string
+ * @s: parameter that is required
+ * Return: 0
+ */
+
 void print_rev(char *s)
 {
 	int i = 0;
