@@ -5,22 +5,17 @@
  * @src: parameter required for source string
  * Return:(pointer)
  */
+
 char *_strcpy(char *dest, char *src)
 {
-	int count = 0;
-
-	while (src[count] != '\n')
-	{
-		count++;
-	}
-	count++;
-
 	int i;
 
-	for (i = 0; i < count; i++)
+	for (i = 0; *(src + i) != '\0'; i++)
 	{
-		*dest[i] = *src[i];
+		dest[i] = *(src + i);
 	}
+	dest[i] = '\0';
+
 	return (dest);
 }
 
