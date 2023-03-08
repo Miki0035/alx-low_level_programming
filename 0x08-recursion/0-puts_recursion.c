@@ -12,7 +12,7 @@ void _puts_recursion(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		_putchar(s[i];
+		_putchar(s[i]);
 		i++;
 	}
 }
